@@ -1,0 +1,30 @@
+.sign-up__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  padding-bottom: 284px;
+  background-color: #4FD1C5;
+  background-image: url("../../Assets/Image/signUpBg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sign-up__title {
+  margin-top: 55px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sign-up__intro-text {
+  max-width: 333px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}

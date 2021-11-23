@@ -1,0 +1,49 @@
+.switcher-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+.switcher {
+  position: relative;
+  width: 36px;
+  height: 18.5px;
+  background: #4FD1C5;
+  border-radius: 97.7397px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  
+  &--false {
+    background: #E2E8F0;
+    
+    & ~ .switcher-text {
+      color: #A0AEC0;
+    }
+  }
+}
+.switcher-circle {
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  margin: 2.5px;
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  
+  &--false {
+    transition: all 0.3s ease;
+    left: 0;
+  }
+}
+.switcher-text {
+  transition: all 0.3s ease;
+  color: #2D3748;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-left: 10px;
+  text-transform: capitalize;
+}

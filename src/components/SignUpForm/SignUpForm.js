@@ -12,45 +12,62 @@ import AppleIcon from "../Svgs/Apple";
 import GoogleIcon from "../Svgs/Google";
 
 function SignUpForm() {
-
   const [switchState, setSwitchState] = useState(false);
 
   return (
     <>
       <section className="sign-up__form-section">
-        <h3 className="sign-up__form-title">Register with</h3>
+        <div className="sign-up__form-section-wrapper">
+          <h3 className="sign-up__form-title">Register with</h3>
 
-        <ul className="sign-up__with-social">
-          <li className="sign-up__with-social-item">
-            <Link className="sign-up__with-social-link" to="facebook.com">
-              <FacebookIcon />
-            </Link>
-          </li>
-          <li className="sign-up__with-social-item">
-            <Link className="sign-up__with-social-link" to="apple.com">
-              <AppleIcon />
-            </Link>
-          </li>
-          <li className="sign-up__with-social-item">
-            <Link className="sign-up__with-social-link" to="google.com">
-              <GoogleIcon />
-            </Link>
-          </li>
-        </ul>
+          <ul className="sign-up__with-social">
+            <li className="sign-up__with-social-item">
+              <Link className="sign-up__with-social-link" to="facebook.com">
+                <FacebookIcon />
+              </Link>
+            </li>
+            <li className="sign-up__with-social-item">
+              <Link className="sign-up__with-social-link" to="apple.com">
+                <AppleIcon />
+              </Link>
+            </li>
+            <li className="sign-up__with-social-item">
+              <Link className="sign-up__with-social-link" to="google.com">
+                <GoogleIcon />
+              </Link>
+            </li>
+          </ul>
 
-        <span className="sign-up__span">Or</span>
+          <span className="sign-up__span">Or</span>
 
-        <form className="sign-up__form">
-          <FormInput placeholder="Your full name" labelText="Name" type="text"/>
-          <FormInput placeholder="Your email address" labelText="Email" type="email"/>
-          <FormInput placeholder="Your password" labelText="Password" type="password"/>
-          <Switcher setState={setSwitchState} text="Remember me" isActive={switchState} />
-          <button className="form-btn sign-up__btn" type="submit">SIGN IN</button>
-        </form>
+          <form className="sign-up__form">
+            <FormInput
+              placeholder="Your full name"
+              labelText="Name"
+              type="text"
+            />
+            <FormInput
+              placeholder="Your email address"
+              labelText="Email"
+              type="email"
+            />
+            <FormInput
+              placeholder="Your password"
+              labelText="Password"
+              type="password"
+            />
+            <Switcher
+              setState={setSwitchState}
+              text="Remember me"
+              isActive={switchState}
+            />
+            <button className="form-btn sign-up__btn" type="submit">
+              SIGN IN
+            </button>
+          </form>
+        </div>
       </section>
     </>
   );
 }
 export default SignUpForm;
-
-

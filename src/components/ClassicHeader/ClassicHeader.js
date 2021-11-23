@@ -1,3 +1,4 @@
+import "../../Assets/SCSS/Buttons.scss";
 import "./ClassicHeader.scss";
 
 import { Link } from "react-router-dom";
@@ -46,6 +47,7 @@ function ClassicHeader({ theme }) {
         <button className="classic-header__btn" type="button">
           Free Download
         </button>
+        <button className="classic-header__btn-gmbur gammburger-btn" aria-label="button" type="button"></button>
       </header>
     </>
   );

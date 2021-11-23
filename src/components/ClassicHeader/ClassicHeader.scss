@@ -79,3 +79,18 @@
   line-height: 150%;
   color: #2D3748;
 }
+.classic-header__btn-gmbur {
+  display: none;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 900px) {
+  .classic-header__nav {
+    display: none;
+  }
+  .classic-header__btn {
+    display: none;
+  }
+  .classic-header__btn-gmbur {
+    display: block;
+  }
+}

@@ -2,15 +2,17 @@
   max-width: 440px;
   width: 100%;
   transform: translateY(-290px);
+  padding:0 25px;
+  margin: 66px auto 0;
+}
+.sign-up__form-section-wrapper {
   background-color: #fff;
   padding: 45px 51px;
   box-shadow: 0px 7px 23px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
-  margin: 66px auto 0;
   display: flex;
   flex-direction: column;
 }
-
 .sign-up__form-title {
   margin: 0;
   margin-bottom: 22px;
@@ -72,4 +74,23 @@
 } 
 .sign-up__btn {
   margin-top: 24px;
+}
+@media only screen and (max-width: 550px) {
+  .sign-up__form-section-wrapper {
+    padding: 40px;
+
+  }
+}
+@media only screen and (max-width: 400px) {
+  .sign-up__with-social-link {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .sign-up__form-section {
+    padding-inline: 0;
+  }
+  .sign-up__form-section-wrapper {
+    padding: 25px;
+  }
 }

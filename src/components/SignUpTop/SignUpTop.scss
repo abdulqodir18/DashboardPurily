@@ -28,3 +28,9 @@
   text-align: center;
   color: #FFFFFF;
 }
+
+@media only screen and (max-width: 550px) {
+  .sign-up__top {
+    border-radius: 0;
+  }
+}
